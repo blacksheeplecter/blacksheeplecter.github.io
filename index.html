@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BLACK SHEEP MANAGEMENT Y DESARROLLO S.R.L.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BLACK SHEEP MANAGEMENT Y DESARROLLO S.R.L. agencia de publicidad, comunicación y relaciones públicas en City Bell. Estrategia, creatividad y gestión integral para marcas que piensan diferente.">
+<style>
+html
+{
+    scroll-behavior:smooth;
+}
+body
+{
+    margin:0;
+    padding:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+    color:#222222;
+    background:#f3eee6;
+}
+*,
+*::before,
+*::after
+{
+    box-sizing:border-box;
+}
+a
+{
+    text-decoration:none;
+    color:inherit;
+}
+img
+{
+    max-width:100%;
+    display:block;
+}
+.hero
+{
+    position:relative;
+    min-height:100vh;
+    color:#ffffff;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-image:
+        linear-gradient(120deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),
+        url("https://images.pexels.com/photos/1181555/pexels-photo-1181555.jpeg");
+    background-size:cover;
+    background-position:center;
+}
+.hero-top-bar
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 7vw;
+    font-size:14px;
+    letter-spacing:0.08em;
+}
+.logo-mark
+{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+}
+.logo-circle
+{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.7);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:11px;
+}
+.main-nav
+{
+    display:flex;
+    gap:22px;
+    text-transform:uppercase;
+}
+.main-nav a
+{
+    position:relative;
+    padding-bottom:4px;
+    font-size:12px;
+    opacity:0.9;
+    transition:opacity 0.3s ease,transform 0.3s ease;
+}
+.main-nav a::after
+{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:1px;
+    background:#ffffff;
+    transition:width 0.3s ease;
+}
+.main-nav a:hover
+{
+    opacity:1;
+    transform:translateY(-1px);
+}
+.main-nav a:hover::after
+{
+    width:100%;
+}
+.hero-inner
+{
+    padding:0 7vw 60px 7vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    flex:1;
+}
+.hero-tagline
+{
+    font-size:13px;
+    letter-spacing:0.3em;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+.hero-title
+{
+    font-size:46px;
+    max-width:620px;
+    line-height:1.1;
+    margin-bottom:18px;
+}
+.hero-subtitle
+{
+    max-width:520px;
+    font-size:16px;
+    line-height:1.6;
+    opacity:0.9;
+    margin-bottom:32px;
+}
+.hero-actions
+{
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+}
+.btn-primary
+{
+    padding:13px 26px;
+    border-radius:30px;
+    background:#f9d27b;
+    border:none;
+    color:#402b10;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:0.09em;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:transform 0.25s ease,box-shadow 0.25s ease,background 0.25s ease;
+}
+.btn-primary:hover
+{
+    transform:translateY(-2px);
+    box-shadow:0 12px 24px rgba(0,0,0,0.35);
+    background:#ffdd90;
+}
+.btn-outline
+{
+    padding:12px 24px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,0.75);
+    background:transparent;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:500;
+    letter-spacing:0.09em;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:background 0.25s ease,transform 0.25s ease;
+}
+.btn-outline:hover
+{
+    background:rgba(255,255,255,0.15);
+    transform:translateY(-2px);
+}
+.hero-bottom-info
+{
+    padding:0 7vw 26px 7vw;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:12px;
+    opacity:0.85;
+}
+.hero-location
+{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+.hero-location-dot
+{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#f9d27b;
+}
+.hero-scroll-hint
+{
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+}
+.section
+{
+    position:relative;
+    padding:80px 7vw;
+    background:#f5f1ea;
+}
+.section:nth-of-type(even)
+{
+    background:#ffffff;
+}
+.section-inner
+{
+    max-width:1040px;
+    margin:0 auto;
+}
+.section-header
+{
+    margin-bottom:32px;
+}
+.section-kicker
+{
+    font-size:12px;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    color:#c0a47c;
+    margin-bottom:10px;
+}
+.section-title
+{
+    font-size:30px;
+    margin:0 0 12px 0;
+}
+.section-subtitle
+{
+    font-size:15px;
+    max-width:540px;
+    line-height:1.7;
+    color:#555555;
+}
+.about-grid
+{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:40px;
+    align-items:flex-start;
+}
+.about-text p
+{
+    margin:0 0 14px 0;
+    line-height:1.7;
+    font-size:15px;
+}
+.about-highlight
+{
+    margin-top:10px;
+    padding:16px 18px;
+    border-radius:18px;
+    background:#ffffff;
+    box-shadow:0 12px 40px rgba(0,0,0,0.08);
+    font-size:14px;
+}
+.about-media
+{
+    position:relative;
+}
+.about-photo
+{
+    height:260px;
+    border-radius:26px;
+    background-image:
+        linear-gradient(140deg,rgba(0,0,0,0.2),rgba(0,0,0,0.05)),
+        url("https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg");
+    background-size:cover;
+    background-position:center;
+}
+.about-badge
+{
+    position:absolute;
+    bottom:-26px;
+    left:24px;
+    background:#222222;
+    color:#ffffff;
+    padding:14px 18px;
+    border-radius:18px;
+    font-size:12px;
+    max-width:210px;
+}
+.services-grid
+{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+}
+.service-card
+{
+    background:#ffffff;
+    border-radius:26px;
+    padding:24px 22px 26px 22px;
+    box-shadow:0 16px 44px rgba(0,0,0,0.06);
+    position:relative;
+    overflow:hidden;
+}
+.service-badge
+{
+    position:absolute;
+    top:20px;
+    right:22px;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.18em;
+    color:#cdb189;
+}
+.service-title
+{
+    font-size:18px;
+    margin-bottom:10px;
+}
+.service-tagline
+{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:0.16em;
+    color:#cdb189;
+    margin-bottom:14px;
+}
+.service-card p
+{
+    font-size:14px;
+    line-height:1.7;
+    margin:0 0 10px 0;
+}
+.service-footer-link
+{
+    margin-top:8px;
+    font-size:13px;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    color:#b9832f;
+}
+.service-footer-link span
+{
+    transform:translateY(1px);
+}
+.advantages-grid
+{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+}
+.adv-card
+{
+    background:#faf4ea;
+    border-radius:24px;
+    padding:24px 22px;
+    border:1px solid #eadac0;
+}
+.adv-number
+{
+    font-size:28px;
+    font-weight:600;
+    color:#c89b4d;
+    margin-bottom:6px;
+}
+.adv-title
+{
+    font-size:16px;
+    margin-bottom:10px;
+}
+.adv-text
+{
+    font-size:14px;
+    line-height:1.7;
+}
+.process-wrapper
+{
+    margin-top:18px;
+    display:flex;
+    flex-direction:column;
+    gap:26px;
+}
+.process-row
+{
+    display:grid;
+    grid-template-columns:0.6fr 1.4fr;
+    gap:22px;
+    align-items:center;
+}
+.process-step-label
+{
+    font-size:12px;
+    letter-spacing:0.26em;
+    text-transform:uppercase;
+    color:#c0a47c;
+    margin-bottom:4px;
+}
+.process-step-title
+{
+    font-size:18px;
+    margin-bottom:8px;
+}
+.process-step-text
+{
+    font-size:14px;
+    line-height:1.7;
+}
+.process-timeline
+{
+    position:relative;
+    padding-left:24px;
+}
+.process-dot
+{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    border:2px solid #c89b4d;
+    background:#fdf7ed;
+    position:absolute;
+    left:0;
+    top:4px;
+}
+.process-line
+{
+    position:absolute;
+    left:6px;
+    top:16px;
+    width:1px;
+    height:100%;
+    background:linear-gradient(to bottom,#c89b4d,rgba(200,155,77,0.1));
+}
+.cta-section
+{
+    position:relative;
+    overflow:hidden;
+    border-radius:34px;
+    background-image:
+        linear-gradient(120deg,rgba(0,0,0,0.70),rgba(0,0,0,0.45)),
+        url("https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg");
+    background-size:cover;
+    background-position:center;
+    color:#ffffff;
+    padding:50px 40px;
+    margin-top:18px;
+}
+.cta-title
+{
+    font-size:24px;
+    margin-bottom:12px;
+}
+.cta-text
+{
+    font-size:15px;
+    max-width:520px;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+.contact-layout
+{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+.contact-badge
+{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:0.3em;
+    color:#c0a47c;
+    margin-bottom:10px;
+}
+.contact-title
+{
+    font-size:24px;
+    margin-bottom:10px;
+}
+.contact-text
+{
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:18px;
+}
+.contact-note
+{
+    font-size:12px;
+    color:#777777;
+}
+.contact-highlight-card
+{
+    background:#ffffff;
+    border-radius:24px;
+    padding:24px 22px;
+    box-shadow:0 18px 40px rgba(0,0,0,0.08);
+}
+.contact-highlight-title
+{
+    font-size:16px;
+    margin-bottom:6px;
+}
+.contact-highlight-text
+{
+    font-size:13px;
+    line-height:1.7;
+}
+.footer
+{
+    padding:40px 7vw 32px 7vw;
+    background:#151515;
+    color:#f3eee6;
+}
+.footer-inner
+{
+    max-width:1040px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:26px;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+.footer-brand
+{
+    max-width:320px;
+}
+.footer-brand-title
+{
+    font-size:16px;
+    margin-bottom:8px;
+}
+.footer-brand-text
+{
+    font-size:13px;
+    line-height:1.6;
+    opacity:0.8;
+}
+.footer-contact
+{
+    font-size:13px;
+    line-height:1.8;
+}
+.footer-contact-label
+{
+    text-transform:uppercase;
+    letter-spacing:0.24em;
+    font-size:11px;
+    color:#b4a189;
+}
+.footer-copy
+{
+    margin-top:24px;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.22em;
+    opacity:0.7;
+}
+.highlight-email
+{
+    color:#f4cb7e;
+}
+.modal-overlay
+{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.60);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 0.3s ease;
+    z-index:40;
+}
+.modal-overlay.show
+{
+    opacity:1;
+    pointer-events:auto;
+}
+.modal-window
+{
+    background:#f9f5ee;
+    border-radius:28px;
+    max-width:520px;
+    width:90%;
+    padding:28px 26px 26px 26px;
+    box-shadow:0 22px 60px rgba(0,0,0,0.45);
+    position:relative;
+}
+.modal-title
+{
+    font-size:20px;
+    margin-bottom:6px;
+}
+.modal-subtitle
+{
+    font-size:13px;
+    color:#666666;
+    margin-bottom:18px;
+    line-height:1.6;
+}
+.modal-close
+{
+    position:absolute;
+    right:18px;
+    top:16px;
+    font-size:18px;
+    cursor:pointer;
+    opacity:0.65;
+    transition:opacity 0.2s ease,transform 0.2s ease;
+}
+.modal-close:hover
+{
+    opacity:1;
+    transform:scale(1.04);
+}
+.form-grid
+{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    margin-bottom:14px;
+}
+.form-field
+{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    font-size:13px;
+}
+.form-field label
+{
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:#7c6a4b;
+}
+.form-field input,
+.form-field select,
+.form-field textarea
+{
+    border-radius:18px;
+    border:1px solid #e0d4c2;
+    padding:9px 11px;
+    font-size:14px;
+    font-family:inherit;
+    background:#ffffff;
+}
+.form-field textarea
+{
+    resize:vertical;
+    min-height:90px;
+}
+.form-footer
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:10px;
+    gap:12px;
+    flex-wrap:wrap;
+}
+.form-note
+{
+    font-size:11px;
+    color:#8a7a62;
+    max-width:260px;
+}
+.btn-small
+{
+    padding:10px 24px;
+    border-radius:26px;
+    border:none;
+    background:#c89b4d;
+    color:#ffffff;
+    font-size:13px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:background 0.25s ease,transform 0.25s ease,box-shadow 0.25s ease;
+}
+.btn-small:hover
+{
+    background:#dfb261;
+    transform:translateY(-1px);
+    box-shadow:0 10px 28px rgba(0,0,0,0.25);
+}
+.success-body
+{
+    font-size:14px;
+    line-height:1.7;
+    margin-bottom:18px;
+}
+.success-highlight
+{
+    font-weight:600;
+}
+.success-footer
+{
+    display:flex;
+    justify-content:flex-end;
+}
+.btn-ghost
+{
+    border-radius:22px;
+    padding:8px 18px;
+    border:1px solid #c89b4d;
+    background:transparent;
+    font-size:13px;
+    cursor:pointer;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    transition:background 0.25s ease,color 0.25s ease;
+}
+.btn-ghost:hover
+{
+    background:#c89b4d;
+    color:#ffffff;
+}
+.burger
+{
+    display:none;
+    flex-direction:column;
+    gap:4px;
+    cursor:pointer;
+}
+.burger span
+{
+    width:20px;
+    height:2px;
+    background:#ffffff;
+}
+@media (max-width:992px)
+{
+    .about-grid
+    {
+        grid-template-columns:1fr;
+    }
+    .services-grid
+    {
+        grid-template-columns:1fr 1fr;
+    }
+    .advantages-grid
+    {
+        grid-template-columns:1fr 1fr;
+    }
+    .contact-layout
+    {
+        grid-template-columns:1fr;
+    }
+}
+@media (max-width:768px)
+{
+    .hero-title
+    {
+        font-size:34px;
+    }
+    .hero-inner
+    {
+        padding-bottom:40px;
+    }
+    .hero-bottom-info
+    {
+        flex-direction:column;
+        align-items:flex-start;
+        gap:6px;
+    }
+    .hero-top-bar
+    {
+        padding:18px 6vw;
+    }
+    .section
+    {
+        padding:60px 6vw;
+    }
+    .services-grid
+    {
+        grid-template-columns:1fr;
+    }
+    .advantages-grid
+    {
+        grid-template-columns:1fr;
+    }
+    .hero-actions
+    {
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .main-nav
+    {
+        position:fixed;
+        top:0;
+        right:0;
+        height:100vh;
+        width:220px;
+        background:rgba(0,0,0,0.92);
+        flex-direction:column;
+        padding:80px 22px;
+        gap:18px;
+        transform:translateX(100%);
+        transition:transform 0.3s ease;
+        z-index:30;
+    }
+    .main-nav.show
+    {
+        transform:translateX(0);
+    }
+    .burger
+    {
+        display:flex;
+    }
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="inicio">
+    <div class="hero-top-bar">
+        <div class="logo-mark">
+            <div class="logo-circle">
+                BS
+            </div>
+            <div>
+                BLACK SHEEP
+            </div>
+        </div>
+        <nav class="main-nav" id="mainNav">
+            <a href="#sobre">Agencia</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#ventajas">Valor añadido</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="burger" id="burgerButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="hero-inner">
+        <div class="hero-tagline">
+            AGENCIA CREATIVA INDEPENDIENTE
+        </div>
+        <h1 class="hero-title">
+            Gestión y desarrollo para marcas que eligen pensar distinto.
+        </h1>
+        <p class="hero-subtitle">
+            En BLACK SHEEP MANAGEMENT Y DESARROLLO S.R.L. conectamos estrategia, creatividad y relaciones públicas para que tu marca deje de hablar sola y empiece a conversar con las personas correctas, en el momento justo.
+        </p>
+        <div class="hero-actions">
+            <button class="btn-primary" onclick="document.getElementById('sobre').scrollIntoView({behavior:'smooth'});">
+                Descubrir la agencia
+            </button>
+            <button class="btn-outline" id="heroContactButton">
+                Diseñar una campaña juntos
+            </button>
+        </div>
+    </div>
+    <div class="hero-bottom-info">
+        <div class="hero-location">
+            <div class="hero-location-dot"></div>
+            <div>
+                Desde City Bell para marcas inquietas de toda Argentina y la región.
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            DESLIZÁ PARA EXPLORAR
+        </div>
+    </div>
+</header>
+
+<section class="section" id="sobre">
+    <div class="section-inner">
+        <div class="section-header">
+            <div class="section-kicker">
+                QUIÉNES SOMOS
+            </div>
+            <h2 class="section-title">
+                La manada creativa detrás de las marcas inconformistas.
+            </h2>
+            <p class="section-subtitle">
+                Una consultora de management, comunicación y desarrollo que combina mirada estratégica, sensibilidad local y obsesión por los datos.
+            </p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    BLACK SHEEP MANAGEMENT Y DESARROLLO S.R.L. nace en City Bell como un espacio boutique donde la publicidad, las relaciones públicas y la gestión de marca se piensan de manera integral y sin fórmulas enlatadas.
+                </p>
+                <p>
+                    Trabajamos con compañías que quieren desafiar su propia categoría, reposicionarse o lanzar productos que necesitan una narrativa potente para cruzar la puerta del brief y llegar a la vida cotidiana de las personas.
+                </p>
+                <p>
+                    Nuestro equipo mezcla planners, creativos, especialistas en medios, productores de contenido y consultores de reputación que acompañan cada proyecto de punta a punta, desde el diagnóstico hasta la medición de impacto.
+                </p>
+                <p>
+                    Operamos con metodologías ágiles, co-creando con los equipos internos de nuestros clientes y alineando cada campaña a objetivos concretos de negocio, ya sea awareness, preferencia de marca, leads calificados o construcción de confianza.
+                </p>
+                <p>
+                    Desde un lanzamiento regional hasta un plan de comunicación interno, ponemos la misma atención en los detalles: tono, timing, contexto cultural y experiencia de cada audiencia.
+                </p>
+                <div class="about-highlight">
+                    Creemos en las marcas que se animan a no parecerse a nadie. Por eso analizamos el mapa competitivo, detectamos los verdaderos puntos de fricción y construimos estrategias que convierten a nuestros clientes en la oveja negra más memorable de su categoría.
+                </div>
+            </div>
+            <div class="about-media">
+                <div class="about-photo"></div>
+                <div class="about-badge">
+                    Desde nuestro estudio en 467 Lote 171 Grand Bell 1896 City Bell diseñamos campañas que se ven, se sienten y se recuerdan mucho después de que termina el anuncio.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="servicios">
+    <div class="section-inner">
+        <div class="section-header">
+            <div class="section-kicker">
+                LO QUE HACEMOS
+            </div>
+            <h2 class="section-title">
+                Estrategia, contenido y conversaciones que mueven la aguja.
+            </h2>
+            <p class="section-subtitle">
+                Cada servicio está pensado para acompañar un momento clave de tu marca. Podemos entrar en cualquier etapa, pero siempre con una visión global del negocio.
+            </p>
+        </div>
+        <div class="services-grid">
+            <article class="service-card">
+                <div class="service-badge">
+                    BRANDING 360
+                </div>
+                <div class="service-tagline">
+                    Identidad y posicionamiento
+                </div>
+                <h3 class="service-title">
+                    Arquitectura de marca y storytelling accionable.
+                </h3>
+                <p>
+                    Analizamos tu contexto competitivo, tus audiencias y tu propósito para definir una plataforma de marca clara, coherente y fácil de activar en cualquier canal, tanto on como offline.
+                </p>
+                <p>
+                    Diseñamos relatos, tonos de voz y territorios visuales que permiten que cada pieza de comunicación hable el mismo idioma y refuerce el posicionamiento elegido.
+                </p>
+                <p>
+                    A partir de workshops colaborativos, manuales de identidad y guías de contenido, dejamos a tu equipo listo para sostener la narrativa en el tiempo sin perder consistencia.
+                </p>
+                <a href="#proceso" class="service-footer-link">
+                    Ver cómo lo implementamos
+                    <span>↗</span>
+                </a>
+            </article>
+            <article class="service-card">
+                <div class="service-badge">
+                    PR Y MEDIOS
+                </div>
+                <div class="service-tagline">
+                    Reputación e influencia
+                </div>
+                <h3 class="service-title">
+                    Relaciones públicas que construyen confianza real.
+                </h3>
+                <p>
+                    Diseñamos estrategias de prensa y PR que combinan vocerías preparadas, historias noticiables y contenido editorial relevante para periodistas, líderes de opinión y comunidades específicas.
+                </p>
+                <p>
+                    Gestionamos entrevistas, columnas, eventos, activaciones y alianzas con instituciones clave para que tu marca no solo aparezca, sino que gane credibilidad y autoridad en los temas que le importan.
+                </p>
+                <p>
+                    Medimos impacto más allá de la cantidad de notas, entendiendo cómo cada aparición aporta a la percepción y a los indicadores de negocio definidos al inicio del proyecto.
+                </p>
+                <a href="#ventajas" class="service-footer-link">
+                    Por qué nuestra gestión suma
+                    <span>↗</span>
+                </a>
+            </article>
+            <article class="service-card">
+                <div class="service-badge">
+                    DIGITAL
+                </div>
+                <div class="service-tagline">
+                    Datos y performance
+                </div>
+                <h3 class="service-title">
+                    Campañas digitales orquestadas desde la estrategia.
+                </h3>
+                <p>
+                    Planificamos y activamos campañas de paid media, contenido orgánico y acciones con creadores, priorizando los formatos que mejor expresan la historia de tu marca en cada plataforma.
+                </p>
+                <p>
+                    Implementamos dashboards de analítica que permiten ver en tiempo real qué mensajes, públicos y canales están traccionando los objetivos planteados, y ajustamos la inversión sin perder foco.
+                </p>
+                <p>
+                    Coordinamos la experiencia completa: desde la pieza creativa hasta la landing de conversión, asegurando que cada clic tenga sentido para la persona y para tu negocio.
+                </p>
+                <a href="#contacto" class="service-footer-link">
+                    Diseñar un plan digital
+                    <span>↗</span>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="ventajas">
+    <div class="section-inner">
+        <div class="section-header">
+            <div class="section-kicker">
+                POR QUÉ NOS ELIGEN
+            </div>
+            <h2 class="section-title">
+                Ventajas de trabajar con una oveja negra a tu lado.
+            </h2>
+            <p class="section-subtitle">
+                No buscamos ser la agencia más grande, sino la más involucrada en tus desafíos. Estas son algunas de las diferencias que nuestros clientes más valoran.
+            </p>
+        </div>
+        <div class="advantages-grid">
+            <div class="adv-card">
+                <div class="adv-number">
+                    01
+                </div>
+                <div class="adv-title">
+                    Mirada de negocio antes que anuncios.
+                </div>
+                <div class="adv-text">
+                    Antes de pensar piezas, entendemos tu modelo de negocio, tus indicadores críticos y la realidad de tu categoría. A partir de ese análisis armamos estrategias de comunicación que conversan con tus objetivos comerciales y no solo con la estética del momento.
+                </div>
+            </div>
+            <div class="adv-card">
+                <div class="adv-number">
+                    02
+                </div>
+                <div class="adv-title">
+                    Equipo senior involucrado en el día a día.
+                </div>
+                <div class="adv-text">
+                    En BLACK SHEEP no delegamos la estrategia en capas interminables. Los mismos perfiles que diseñan el plan participan de las reuniones clave, leen los reportes y acompañan a tus referentes internos en cada decisión importante de comunicación.
+                </div>
+            </div>
+            <div class="adv-card">
+                <div class="adv-number">
+                    03
+                </div>
+                <div class="adv-title">
+                    Cultura colaborativa y procesos transparentes.
+                </div>
+                <div class="adv-text">
+                    Trabajamos con tableros compartidos, documentación accesible y puntos de control definidos desde el inicio. Esto permite que los equipos del cliente vean cómo avanza cada iniciativa, hagan comentarios a tiempo y aprendan del proceso para futuras campañas.
+                </div>
+            </div>
+        </div>
+        <div class="cta-section">
+            <h3 class="cta-title">
+                ¿Tu marca está lista para dejar de parecerse a las demás?
+            </h3>
+            <p class="cta-text">
+                Si sentís que la comunicación actual ya no refleja lo que son ni a dónde quieren ir, es un buen momento para repensar el relato. Podemos empezar con una sesión estratégica corta y, desde ahí, definir el nivel de acompañamiento que mejor se ajuste a tu equipo.
+            </p>
+            <button class="btn-outline" id="ctaContactSection">
+                Iniciar una conversación
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="proceso">
+    <div class="section-inner">
+        <div class="section-header">
+            <div class="section-kicker">
+                CÓMO TRABAJAMOS
+            </div>
+            <h2 class="section-title">
+                Nuestro proceso estratégico, de la primera reunión a la medición.
+            </h2>
+            <p class="section-subtitle">
+                Estructuramos el trabajo en tres etapas claras, con entregables y decisiones compartidas en cada una. El objetivo es que nunca sientas que la campaña avanza en piloto automático.
+            </p>
+        </div>
+        <div class="process-wrapper">
+            <div class="process-row">
+                <div>
+                    <div class="process-step-label">
+                        ETAPA 1
+                    </div>
+                    <div class="process-step-title">
+                        Descubrimiento profundo del negocio.
+                    </div>
+                    <div class="process-step-text">
+                        Iniciamos con entrevistas, revisión de materiales existentes y análisis de datos para entender el punto de partida. Exploramos cómo te ve hoy el mercado, cuáles son tus objetivos, qué barreras de comunicación encontrás y qué espacios de oportunidad aparecen en tu categoría.
+                    </div>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-dot"></div>
+                    <div class="process-line"></div>
+                </div>
+            </div>
+            <div class="process-row">
+                <div>
+                    <div class="process-step-label">
+                        ETAPA 2
+                    </div>
+                    <div class="process-step-title">
+                        Diseño colaborativo de la estrategia.
+                    </div>
+                    <div class="process-step-text">
+                        Con el diagnóstico en mano, co-creamos la plataforma estratégica: definimos audiencias prioritarias, objetivos medibles, mensajes centrales, territorios creativos y el mix de medios y acciones. Esta etapa culmina con un roadmap consensuado y un calendario de hitos.
+                    </div>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-dot"></div>
+                    <div class="process-line"></div>
+                </div>
+            </div>
+            <div class="process-row">
+                <div>
+                    <div class="process-step-label">
+                        ETAPA 3
+                    </div>
+                    <div class="process-step-title">
+                        Producción, activación y optimización constante.
+                    </div>
+                    <div class="process-step-text">
+                        Ejecutamos el plan, supervisamos proveedores, generamos contenidos y coordinamos la conversación con medios y comunidades. A través de reportes periódicos revisamos avances, aprendemos en tiempo real y proponemos ajustes para que cada acción sume resultados tangibles.
+                    </div>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contacto">
+    <div class="section-inner">
+        <div class="contact-layout">
+            <div>
+                <div class="contact-badge">
+                    HABLEMOS DE TU MARCA
+                </div>
+                <h2 class="contact-title">
+                    Un formulario, una idea clara y una conversación honesta.
+                </h2>
+                <p class="contact-text">
+                    Contanos en qué momento está tu proyecto y qué te gustaría lograr. Leemos cada mensaje con atención y respondemos con propuestas pensadas, no con respuestas automáticas. Nos interesa comprender el contexto antes de sugerir acciones o presupuestos.
+                </p>
+                <p class="contact-text">
+                    Podés compartirnos si estás trabajando en un lanzamiento, en una reestructuración de marca, en una necesidad puntual de prensa o en un desafío interno de cultura organizacional. Cuanta más información tengamos, más precisa será nuestra devolución inicial.
+                </p>
+                <p class="contact-note">
+                    La información que envíes se utilizará únicamente para responder a tu consulta y coordinar posibles instancias de trabajo conjunto.
+                </p>
+                <button class="btn-primary" id="openContactButton">
+                    Abrir formulario de proyecto
+                </button>
+            </div>
+            <div class="contact-highlight-card">
+                <div class="contact-highlight-title">
+                    ¿Qué solemos preguntar en la primera reunión?
+                </div>
+                <div class="contact-highlight-text">
+                    Nos interesa conocer cómo medís hoy el éxito de tu comunicación, qué decisiones necesitan apoyo desde la estrategia de marca y cómo se estructura tu equipo interno. Con esa información podemos sugerir un esquema de trabajo que complemente tus recursos actuales y potencie las capacidades ya instaladas.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" id="datos">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="footer-brand-title">
+                BLACK SHEEP MANAGEMENT Y DESARROLLO S.R.L.
+            </div>
+            <div class="footer-brand-text">
+                Agencia de publicidad, relaciones públicas y desarrollo de marca con base en City Bell. Acompañamos a compañías que buscan dar un salto estratégico y creativo sin perder autenticidad ni cercanía con sus audiencias.
+            </div>
+        </div>
+        <div class="footer-contact">
+            <div class="footer-contact-label">
+                ESTUDIO CREATIVO
+            </div>
+            <div>
+                467 Lote 171 Grand Bell 1896 City Bell
+            </div>
+            <div>
+                <span class="footer-contact-label">
+                    CONTACTO
+                </span>
+            </div>
+            <div>
+                <a href="mailto:info@blacksheepmanagementydesarrollo.pro" class="highlight-email">
+                    info@blacksheepmanagementydesarrollo.pro
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-inner">
+        <div class="footer-copy">
+            © BLACK SHEEP MANAGEMENT Y DESARROLLO S.R.L. Comunicación pensada, no improvisada.
+        </div>
+    </div>
+</footer>
+
+<div class="modal-overlay" id="contactModal">
+    <div class="modal-window">
+        <div class="modal-close" data-close-modal="contactModal">
+            ×
+        </div>
+        <h3 class="modal-title">
+            Contanos sobre tu proyecto.
+        </h3>
+        <p class="modal-subtitle">
+            Completá los datos principales para que podamos entender el contexto y preparar una primera propuesta alineada a tus objetivos de comunicación.
+        </p>
+        <form id="projectForm">
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="nombre">
+                        Nombre y apellido
+                    </label>
+                    <input id="nombre" name="nombre" type="text" required>
+                </div>
+                <div class="form-field">
+                    <label for="empresa">
+                        Empresa o marca
+                    </label>
+                    <input id="empresa" name="empresa" type="text" required>
+                </div>
+            </div>
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="email">
+                        Correo electrónico
+                    </label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div class="form-field">
+                    <label for="objetivo">
+                        Objetivo principal
+                    </label>
+                    <select id="objetivo" name="objetivo" required>
+                        <option value="">
+                            Seleccionar opción
+                        </option>
+                        <option value="lanzamiento">
+                            Lanzamiento de marca o producto
+                        </option>
+                        <option value="reposicionamiento">
+                            Reposicionamiento y branding
+                        </option>
+                        <option value="pr">
+                            Relaciones públicas y prensa
+                        </option>
+                        <option value="digital">
+                            Campañas digitales y contenido
+                        </option>
+                        <option value="interno">
+                            Comunicación interna y cultura
+                        </option>
+                        <option value="otro">
+                            Otro desafío de comunicación
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-field">
+                <label for="mensaje">
+                    Contexto y necesidades
+                </label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="horizonte">
+                        Plazo estimado
+                    </label>
+                    <select id="horizonte" name="horizonte">
+                        <option value="">
+                            Seleccionar opción
+                        </option>
+                        <option value="30">
+                            Próximos 30 días
+                        </option>
+                        <option value="60">
+                            Próximos 2 a 3 meses
+                        </option>
+                        <option value="90">
+                            Próximos 4 a 6 meses
+                        </option>
+                        <option value="flexible">
+                            Plazo flexible
+                        </option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="presupuesto">
+                        Rango de inversión
+                    </label>
+                    <select id="presupuesto" name="presupuesto">
+                        <option value="">
+                            Prefiero conversarlo
+                        </option>
+                        <option value="inicial">
+                            Exploratorio / piloto
+                        </option>
+                        <option value="medio">
+                            Campaña integral
+                        </option>
+                        <option value="alto">
+                            Plan regional o anual
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-footer">
+                <p class="form-note">
+                    Al enviar este formulario aceptás que nos contactemos por correo electrónico para continuar la conversación sobre tu consulta.
+                </p>
+                <button type="submit" class="btn-small">
+                    Enviar mensaje
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal-overlay" id="successModal">
+    <div class="modal-window">
+        <div class="modal-close" data-close-modal="successModal">
+            ×
+        </div>
+        <h3 class="modal-title">
+            Mensaje enviado correctamente.
+        </h3>
+        <p class="success-body">
+            Gracias por confiar en
+            <span class="success-highlight">
+                BLACK SHEEP MANAGEMENT Y DESARROLLO S.R.L.
+            </span>
+            .
+            Revisaremos tu consulta y te responderemos a la brevedad con una propuesta o para coordinar una primera reunión.
+        </p>
+        <p class="success-body">
+            Mientras tanto te invitamos a revisar internamente qué otros equipos deberían estar involucrados en la conversación para que la primera instancia sea lo más productiva posible.
+        </p>
+        <div class="success-footer">
+            
+        </div>
+    </div>
+</div>
+
+<script>
+var burgerButton=document.getElementById("burgerButton");
+var mainNav=document.getElementById("mainNav");
+burgerButton.addEventListener("click",function(){
+    mainNav.classList.toggle("show");
+});
+var navLinks=mainNav.querySelectorAll("a");
+navLinks.forEach(function(link){
+    link.addEventListener("click",function(){
+        if(mainNav.classList.contains("show")){
+            mainNav.classList.remove("show");
+        }
+    });
+});
+var openContactButton=document.getElementById("openContactButton");
+var heroContactButton=document.getElementById("heroContactButton");
+var ctaContactSection=document.getElementById("ctaContactSection");
+var contactModal=document.getElementById("contactModal");
+var successModal=document.getElementById("successModal");
+function openModal(modal){
+    modal.classList.add("show");
+}
+function closeModal(modal){
+    modal.classList.remove("show");
+}
+openContactButton.addEventListener("click",function(){
+    openModal(contactModal);
+});
+heroContactButton.addEventListener("click",function(){
+    openModal(contactModal);
+});
+ctaContactSection.addEventListener("click",function(){
+    openModal(contactModal);
+});
+document.querySelectorAll(".modal-close").forEach(function(closeButton){
+    closeButton.addEventListener("click",function(){
+        var targetId=this.getAttribute("data-close-modal");
+        if(targetId){
+            var modal=document.getElementById(targetId);
+            closeModal(modal);
+        }else{
+            if(this.closest(".modal-overlay")){
+                closeModal(this.closest(".modal-overlay"));
+            }
+        }
+    });
+});
+document.querySelectorAll(".modal-overlay").forEach(function(overlay){
+    overlay.addEventListener("click",function(event){
+        if(event.target===overlay){
+            closeModal(overlay);
+        }
+    });
+});
+var projectForm=document.getElementById("projectForm");
+projectForm.addEventListener("submit",function(event){
+    event.preventDefault();
+    closeModal(contactModal);
+    projectForm.reset();
+    openModal(successModal);
+});
+</script>
+
+</body>
+</html>
